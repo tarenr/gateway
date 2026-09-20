@@ -153,9 +153,11 @@ app.prepare().then(() => {
     };
 
     // Initial ping
-    sendHeartbeat();
-    // Interval ping
-    heartbeatInterval = setInterval(sendHeartbeat, 30000);
+    if (process.env.DISABLE_TELEMETRY !== "true") {
+      sendHeartbeat();
+      // Interval ping
+      heartbeatInterval = setInterval(sendHeartbeat, 30000);
+    }
     // --------------------------------
 
     // --- Self keep-alive (anti idle-sleep) ---
