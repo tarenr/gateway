@@ -50,6 +50,7 @@ next-env.d.ts
 !/data/media/.gitkeep
 /public/media/*
 server.log
+/logs/
 
 # external bot scripts (reference only, not part of build)
 /A-TSUKASA-REWORK-ESM_FIX_ADEXTERNAL+JPM/
