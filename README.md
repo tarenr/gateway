@@ -101,6 +101,16 @@ WA-AKG natively supports **n8n**! You can build complex, no-code/low-code WhatsA
 
 ---
 
+## ⚡ Core Integrations & Gateways
+
+- **Baileys (WhatsApp Web Engine):** `@whiskeysockets/baileys` para gerenciar conexões WebSocket nativas de múltiplas sessões WhatsApp.
+- **KlikQRIS Payment Gateway:** Integração nativa para pagamentos e geração de cobranças via QRIS/PIX (`KLIKQRIS_BASE_URL`).
+- **Cloudflare Tunnel:** Acesso seguro e proxy HTTPS de produção (`https://zap.tfr-info.com.br`).
+- **n8n Community Node:** Suporte completo no-code/low-code com acoplamento nativo (`n8n-nodes-wa-akg`).
+
+---
+
+
 ## 🚀 Quick Installation
 
 ### 1. Prerequisites
