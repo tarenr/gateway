@@ -140,9 +140,12 @@ npm run make-admin admin@example.com password123
 # Development
 npm run dev
 
-# Production
-npm run build && npm start
-```
+### ⚙️ Auto-Start & Auto-Recuperação no Windows (Task Scheduler)
+
+No ambiente local, a tarefa agendada **`wa-akg-autostart`** supervisiona o serviço na porta `3030` via `iniciar-supervisionado.ps1 -App WaAkg`.
+- **Resiliência 100% Automática:** Se a conexão ou o processo Node cair, o supervisor o **relança automaticamente em 5 a 15 segundos**.
+- **Logs:** Registrados em `%LOCALAPPDATA%\autostart-logs\WaAkg.out.log` e `.err.log`.
+
 
 ### 🐋 Docker Deployment (Zero Configuration)
 
